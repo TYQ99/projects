@@ -1,0 +1,253 @@
+/******************************************
+*******此样式为通用样式,被其他样式共用********
+*******************************************/
+//定义，方便以下使用
+@ii:75rem;
+//基础样式设置
+*{margin: 0;padding: 0;}
+body{
+    min-width: 320px;
+    width: 10rem;
+    margin: 0 auto;
+    background: #f2f2f2;
+    line-height: 1.5;
+    //在移动端取消点击高亮
+    -webkit-tap-highlight-color:transparent;
+    // 防止移动端的浏览器自定义样式
+    -webkit-appearance:none;
+    // 最小的屏幕样式
+    min-width: 320px;
+}
+//当屏幕大于750时，使用固定的值
+@media screen and (min-width:750px){
+    html{
+        font-size:75px!important;
+    }
+}
+// *************************最上面的顶部******************************
+// 顶部部分使用三个盒子，用flex，给两侧不定的宽和高，中间不设宽和高，让其是剩余的宽度就行了
+.head-top{
+    z-index: 99;
+    position: fixed;//固定定位
+    top: 0;
+    display: flex;//盒子flex布局
+    width: 10rem;//当屏幕大于750就固定是750，若不是则宽度是整个屏幕
+    height: 25 / @ii;//rem布局，不做解释
+    background: #FAFAFA;
+    line-height: 25 / @ii;
+    // 左边盒子
+    .top-letf{
+        margin-left: 25 / @ii;
+        font-size: 10 / @ii;
+        &::after{
+            content: "";
+            margin-left: -15 / @ii;
+            margin-top: -20 / @ii;
+            display: block;
+            font-size: .133333rem;
+            //图片方法是精灵图的用法
+            background: url(../images/here.jpg) no-repeat -10 / @ii -25 / @ii;
+            width: 13 / @ii;
+            height: 14 / @ii;
+            background-size: 64 / @ii 64 / @ii;
+        }
+    }
+    // 中间盒子
+    .top-conter{
+        flex: 1;
+    }
+    // 右边盒子
+    .top-right{
+        height: 25 / @ii;
+        font-size: 15 / @ii;
+        ul{
+            list-style-type: none;//去掉li的样式
+            display: flex;//为了让li在都在行内
+            // 第一个li
+            .li01{
+                color: red;
+            }
+            // 第二个li
+            .li02{
+                margin-left: 20 / @ii;
+                &::after{
+                    content: "";
+                    display: block;
+                    background: black;
+                    width: 1 / @ii;
+                    height: 15 / @ii;
+                    margin-top: -20 / @ii;
+                    margin-left: -10 / @ii;
+                }
+            }
+            // 第三个li
+            .li03{
+                margin-left: 20 / @ii;
+                &::after{
+                    content: "";
+                    display: block;
+                    background: black;
+                    width: 1 / @ii;
+                    height: 15 / @ii;
+                    margin-top: -20 / @ii;
+                    margin-left: -10 / @ii;
+                }
+            }
+            // 第四个li
+            .li04{
+                margin-left: 20 / @ii;
+                &::after{
+                    content: "";
+                    display: block;
+                    background: black;
+                    width: 1 / @ii;
+                    height: 15 / @ii;
+                    margin-top: -20 / @ii;
+                    margin-left: -10 / @ii;
+                }
+            }
+            // 第五个li
+            .li05{
+                margin-left: 20 / @ii;
+                &::after{
+                    content: "";
+                    display: block;
+                    background: black;
+                    width: 1 / @ii;
+                    height: 15 / @ii;
+                    margin-top: -20 / @ii;
+                    margin-left: -10 / @ii;
+                }
+            }
+        }
+    }
+}
+// footer
+footer{
+    height: 285 / @ii;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-top: 30 / @ii;
+    .footer-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 75 / @ii;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1 / @ii dashed black;
+        .footer-top-01{
+            display: flex;
+            justify-content: center;
+        }
+        .footer-top-font-t{
+            font-size: 15 / @ii;
+        }
+        .footer-top-font-b{
+            font-size: 10 / @ii;
+        }
+        .photo01{
+            width: 40 / @ii;
+            height: 40 / @ii;
+            background: url(../images/fotter/1.png) no-repeat;
+            background-size: 40 / @ii 40 / @ii;
+        }
+        .photo02{
+            width: 40 / @ii;
+            height: 40 / @ii;
+            background: url(../images/fotter/2.png) no-repeat;
+            background-size: 40 / @ii 40 / @ii;
+        }
+        .photo03{
+            width: 40 / @ii;
+            height: 40 / @ii;
+            background: url(../images/fotter/3.png) no-repeat;
+            background-size: 40 / @ii 40 / @ii;
+        }
+        .photo04{
+            width: 40 / @ii;
+            height: 40 / @ii;
+            background: url(../images/fotter/4.png) no-repeat;
+            background-size: 40 / @ii 40 / @ii;
+        }
+    }
+    .footer-center{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1 / @ii dashed black;
+        ul{
+            list-style: none;
+            li{
+                font-size: 14 / @ii;
+            }
+            .li01{
+                font-size: 17 / @ii;
+            }
+        }
+    }
+    .footer-butter{
+        .footer-butter-01{
+            ul{
+                list-style: none;
+                display: flex;
+                font-size: 15 / @ii;
+            }
+            .li01{
+                margin-right: 10 / @ii;
+            }
+            .li02,.li03,.li04{
+                margin-right: 10 / @ii;
+                margin-left: 10 / @ii;
+            }
+            .li05{
+                margin-left: 10 / @ii;
+            }
+            .li02::after{
+                content: "";
+                display: block;
+                width: 1 / @ii;
+                height: 15 / @ii;
+                background-color: black;
+                margin-top: -17 / @ii;
+                margin-left: -10 / @ii;
+            }
+            .li03::after{
+                content: "";
+                display: block;
+                width: 1 / @ii;
+                height: 10 / @ii;
+                background-color: black;
+                margin-top: -17 / @ii;
+                margin-left: -10 / @ii;
+            }
+            .li04::after{
+                content: "";
+                display: block;
+                width: 1 / @ii;
+                height: 10 / @ii;
+                background-color: black;
+                margin-top: -17 / @ii;
+                margin-left: -10 / @ii;
+            }
+            .li05::after{
+                content: "";
+                display: block;
+                width: 1 / @ii;
+                height: 10 / @ii;
+                background-color: black;
+                margin-top: -17 / @ii;
+                margin-left: -10 / @ii;
+            }
+        }
+        .footer-butter-butter{
+            font-size: 10 / @ii;
+            text-align: center;
+        }
+    }
+}

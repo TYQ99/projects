@@ -1,0 +1,188 @@
+//定义，方便以下使用
+@ii:75rem;
+// 将通用的文件应用到此文件中
+@import "./cummon.less";
+// 开始写注册
+#text{
+    width: 10rem;
+    height: 460 / @ii;
+    background-color: #EEEEEE;
+    .box{
+        height: 460 / @ii;
+        background-color: #FFFFFF;
+        margin-top: 60 / @ii;
+        .text01{
+            margin-left: 15 / @ii;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            .logon{
+                font-size: 30 / @ii;
+                border-bottom: 1 / @ii dashed black;
+                font-weight: bold;
+            }
+            .for{
+                margin-top: 10 / @ii;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: start;
+                    font-size: 20 / @ii;
+                    label{
+                        margin-top: 10 / @ii;
+                        margin-bottom: 10 / @ii;
+                        span{
+                            color: red;
+                            margin-left: 10 / @ii;
+                            margin-right: 10 / @ii;
+                        }
+                        input{
+                            border-top: none;
+                            border-bottom: 0.5px solid black;
+                            border-left: none;
+                            border-right: none;
+                            outline: none;
+                            font-weight: thin;
+                            font-size: 15px;
+                            text-align:center;
+                            vertical-align:middle;
+                        }
+                        #phone,#email,#pass,#trypass{
+                            width: 200 / @ii;
+                        }
+                        .span02{
+                            font-size: 10 / @ii;
+                            color: black;
+                        }
+                    }
+                    .check{
+                        font-size: 15 / @ii;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                    .put{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        input{
+                            width: 150 / @ii;
+                            height: 35 / @ii;
+                            border-radius: 25 / @ii;
+                            outline: none;
+                            border-color: #DCDBEA;
+                            color: #95A4C5;
+                            background-color: #ffffff;
+                            font-size: 15 / @ii;
+                        }
+                        #zhuc{
+                            background-color: green;
+                            margin-bottom: 10 / @ii;
+                        }
+                        #denglu{
+                            background-color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// 登录
+#tex{
+    width: 10rem;
+    height: 350 / @ii;
+    background-color: #EEEEEE;
+    .box{
+        height: 350 / @ii;
+        background-color: #FFFFFF;
+        margin-top: 60 / @ii;
+        .text02{
+            margin-left: 15 / @ii;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            .logon{
+                font-size: 30 / @ii;
+                border-bottom: 1 / @ii dashed black;
+                font-weight: bold;
+            }
+            .for{
+                margin-top: 10 / @ii;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: start;
+                    font-size: 20 / @ii;
+                    label{
+                        margin-top: 10 / @ii;
+                        margin-bottom: 10 / @ii;
+                        span{
+                            color: red;
+                            margin-left: 10 / @ii;
+                            margin-right: 10 / @ii;
+                        }
+                        input{
+                            border-top: none;
+                            border-bottom: 0.5px solid black;
+                            border-left: none;
+                            border-right: none;
+                            outline: none;
+                            font-weight: thin;
+                            font-size: 15px;
+                            text-align:center;
+                            vertical-align:middle;
+                        }
+                        #phone02,#pass02{
+                            width: 200 / @ii;
+                        }
+                        .span02{
+                            font-size: 10 / @ii;
+                            color: black;
+                        }
+                    }
+                    .check{
+                        font-size: 15 / @ii;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                    .put{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        input{
+                            width: 150 / @ii;
+                            height: 35 / @ii;
+                            border-radius: 25 / @ii;
+                            outline: none;
+                            border-color: #DCDBEA;
+                            color: #95A4C5;
+                            vertical-align:middle;
+                            background-color: #ffffff;
+                            font-size: 15 / @ii;
+                        }
+                        #zhuc02{
+                            background-color: rgb(219, 21, 87);
+                            margin-top: 20 / @ii;
+                        }
+                        #denglu02{
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 被js检索到的
+.fire{
+    font-size: 10 / @ii;
+}

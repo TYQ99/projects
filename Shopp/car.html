@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimun-scale=1.0,user-scale=no">
+    <title>购物车</title>
+    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/carStyle.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/car.js" async="async"></script>
+</head>
+<body>
+    <!-- 固定的顶部 -->
+    <div class="head-top">
+        <div class="top-letf">北京</div>
+        <div class="top-conter"></div>
+        <div class="top-right">
+            <ul>
+                <li class="li01" id="li01">返回主页</li>
+                <li class="li02">免费注册</li>
+                <li class="li03">我的订单</li>
+                <li class="li04">收藏夹</li>
+                <li class="li05">帮助中心</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 中间内容 -->
+    <div id="text">
+        <div id="textStart">
+            <div id="box01">
+                <div>购物车</div>
+            </div>
+            <div id="box02">
+                <div id="box0201">
+                    <div class="shortBox01">
+                        <div>选择</div>
+                        <div class="check">
+                            <input type="checkbox" name="id" id="ckbox01">
+                        </div>
+                    </div>
+                    <div class="shortBox02">
+                        <div>商品</div>
+                        <div class="photoBox">
+                            <div class="photo"></div>
+                            <div class="font">
+                                <div class="hea">Dior 迪奥 花荡甜心小姐 女士淡香水</div>
+                                <div>50毫升</div>
+                                <div>不支持7天无理由退货</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shortBox03">
+                        <div>单价(元)</div>
+                        <div id="price"><span>￥<em>498.00</em></span></div>
+                    </div>
+                    <div class="shortBox04">
+                        <div>数量</div>
+                        <div id="number">
+                            <div><input type="button" value="+"><input type="text" name="" id="" value="1"><input type="button" value="-"></div>
+                        </div>
+                    </div>
+                    <div class="shortBox05">
+                        <div>金额(元)</div>
+                        <div id="money"><span>￥<em>498.00</em></span></div>
+                    </div>
+                </div>
+                <div id="box0202">
+                    <div class="checkbox02">
+                        <input type="checkbox" name="id" id="">
+                    </div>
+                    <div class="photoBox">
+                        <div class="photo"></div>
+                        <div class="font">
+                            <div class="hea">LANCOME 兰蔻 嫩肌活肤精华液典藏版</div>
+                            <div>50毫升</div>
+                            <div>不支持7天无理由退货</div>
+                        </div>
+                    </div>
+                    <div id="price02">
+                        <span>￥<em>598.00</em></span>
+                    </div>
+                    <div id="number02">
+                        <input type="button" value="+"><input type="text" name="" id="" value="1"><input type="button" value="-">
+                    </div>
+                    <div id="money02">
+                        <span>￥<em>598.00</em></span>
+                    </div>
+                </div>
+                <div id="box0203">
+                    <div class="checkbox02">
+                        <input type="checkbox" name="id" id="">
+                    </div>
+                    <div class="photoBox">
+                        <div class="photo"></div>
+                        <div class="font">
+                            <div class="hea">LANCOME 兰蔻 嫩肌活肤精华液典藏版</div>
+                            <div>50毫升</div>
+                            <div>不支持7天无理由退货</div>
+                        </div>
+                    </div>
+                    <div id="price03">
+                        <span>￥<em>777.00</em></span>
+                    </div>
+                    <div id="number03">
+                        <input type="button" value="+"><input type="text" name="" id="" value="1"><input type="button" value="-">
+                    </div>
+                    <div id="money03">
+                        <span>￥<em>777.00</em></span>
+                    </div>
+                </div>
+            </div>
+            <div id="buttom">
+                <div class="buttomTop">
+                    <div id="buttLeft">
+                        <div><label for="all"><input type="checkbox" name="" id="all">全选</label></div>
+                        <div><a href="javascript:del()">删除</a></div>
+                    </div>
+                    <div id="buttConter"></div>
+                    <div id="buttRight">
+                        <div>合计<span>￥<em>0.00</em></span></div>
+                        <div>立刻结算</div>
+                    </div>
+                </div>
+                <div class="buttomButtom"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚 -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-01">
+                <div class="photo01"></div>
+                <div>
+                    <div class="footer-top-font-t">100%正品</div>
+                    <div class="footer-top-font-b">正品保障 假一赔十</div>
+                </div>
+            </div>
+            <div class="footer-top-01">
+                <div class="photo02"></div>
+                <div>
+                    <div class="footer-top-font-t">无忧退货</div>
+                    <div class="footer-top-font-b">过年退货 售后无忧</div>
+                </div>
+            </div>
+            <div class="footer-top-01">
+                <div class="photo03"></div>
+                <div>
+                    <div class="footer-top-font-t">低价保障</div>
+                    <div class="footer-top-font-b">减缩环节 确保低价</div>
+                </div>
+            </div>
+            <div class="footer-top-01">
+                <div class="photo04"></div>
+                <div>
+                    <div class="footer-top-font-t">海外发货</div>
+                    <div class="footer-top-font-b">海外直邮 闪电发货</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div>
+                <ul>
+                    <li class="li01">购物指南</li>
+                    <li>购物流程</li>
+                    <li>账号管理</li>
+                    <li>发票制度</li>
+                    <li>会员优惠</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">支付方式</li>
+                    <li>货到付款</li>
+                    <li>网上支付</li>
+                    <li>礼品卡</li>
+                    <li>银行转账</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">订单服务</li>
+                    <li>配送查询</li>
+                    <li>状态说明</li>
+                    <li>取消订单</li>
+                    <li>讯该订单</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">配送方式</li>
+                    <li>配送范围</li>
+                    <li>免费标准</li>
+                    <li>订单自提</li>
+                    <li>验货签收</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">售后服务</li>
+                    <li>售后曾策</li>
+                    <li>价格保护</li>
+                    <li>退款说明</li>
+                    <li>会换货</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-butter">
+            <div class="footer-butter-01">
+                <ul>
+                    <li class="li01">关于我们</li>
+                    <li class="li02">服务条款</li>
+                    <li class="li03">隐私保护</li>
+                    <li class="li04">联系我们</li>
+                    <li class="li05">帮助中心</li>
+                </ul>
+            </div>
+            <div class="footer-butter-butter">Copyringt @2016 XXX.All Rights Reservad</div>
+        </div>
+    </footer>
+</body>
+</html>

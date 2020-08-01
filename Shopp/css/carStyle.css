@@ -1,0 +1,548 @@
+/******************************************
+*******此样式为通用样式,被其他样式共用********
+*******************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 10rem;
+  margin: 0 auto;
+  background: #f2f2f2;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  min-width: 320px;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px!important;
+  }
+}
+.head-top {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 10rem;
+  height: 0.33333333rem;
+  background: #FAFAFA;
+  line-height: 0.33333333rem;
+}
+.head-top .top-letf {
+  margin-left: 0.33333333rem;
+  font-size: 0.13333333rem;
+}
+.head-top .top-letf::after {
+  content: "";
+  margin-left: -0.2rem;
+  margin-top: -0.26666667rem;
+  display: block;
+  font-size: 0.133333rem;
+  background: url(../images/here.jpg) no-repeat -0.13333333rem -0.33333333rem;
+  width: 0.17333333rem;
+  height: 0.18666667rem;
+  background-size: 0.85333333rem 0.85333333rem;
+}
+.head-top .top-conter {
+  flex: 1;
+}
+.head-top .top-right {
+  height: 0.33333333rem;
+  font-size: 0.2rem;
+}
+.head-top .top-right ul {
+  list-style-type: none;
+  display: flex;
+}
+.head-top .top-right ul .li01 {
+  color: red;
+}
+.head-top .top-right ul .li02 {
+  margin-left: 0.26666667rem;
+}
+.head-top .top-right ul .li02::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 0.01333333rem;
+  height: 0.2rem;
+  margin-top: -0.26666667rem;
+  margin-left: -0.13333333rem;
+}
+.head-top .top-right ul .li03 {
+  margin-left: 0.26666667rem;
+}
+.head-top .top-right ul .li03::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 0.01333333rem;
+  height: 0.2rem;
+  margin-top: -0.26666667rem;
+  margin-left: -0.13333333rem;
+}
+.head-top .top-right ul .li04 {
+  margin-left: 0.26666667rem;
+}
+.head-top .top-right ul .li04::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 0.01333333rem;
+  height: 0.2rem;
+  margin-top: -0.26666667rem;
+  margin-left: -0.13333333rem;
+}
+.head-top .top-right ul .li05 {
+  margin-left: 0.26666667rem;
+}
+.head-top .top-right ul .li05::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 0.01333333rem;
+  height: 0.2rem;
+  margin-top: -0.26666667rem;
+  margin-left: -0.13333333rem;
+}
+footer {
+  height: 3.8rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin-top: 0.4rem;
+}
+footer .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 1rem;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.01333333rem dashed black;
+}
+footer .footer-top .footer-top-01 {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-top .footer-top-font-t {
+  font-size: 0.2rem;
+}
+footer .footer-top .footer-top-font-b {
+  font-size: 0.13333333rem;
+}
+footer .footer-top .photo01 {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background: url(../images/fotter/1.png) no-repeat;
+  background-size: 0.53333333rem 0.53333333rem;
+}
+footer .footer-top .photo02 {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background: url(../images/fotter/2.png) no-repeat;
+  background-size: 0.53333333rem 0.53333333rem;
+}
+footer .footer-top .photo03 {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background: url(../images/fotter/3.png) no-repeat;
+  background-size: 0.53333333rem 0.53333333rem;
+}
+footer .footer-top .photo04 {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background: url(../images/fotter/4.png) no-repeat;
+  background-size: 0.53333333rem 0.53333333rem;
+}
+footer .footer-center {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 0.01333333rem dashed black;
+}
+footer .footer-center ul {
+  list-style: none;
+}
+footer .footer-center ul li {
+  font-size: 0.18666667rem;
+}
+footer .footer-center ul .li01 {
+  font-size: 0.22666667rem;
+}
+footer .footer-butter .footer-butter-01 ul {
+  list-style: none;
+  display: flex;
+  font-size: 0.2rem;
+}
+footer .footer-butter .footer-butter-01 .li01 {
+  margin-right: 0.13333333rem;
+}
+footer .footer-butter .footer-butter-01 .li02,
+footer .footer-butter .footer-butter-01 .li03,
+footer .footer-butter .footer-butter-01 .li04 {
+  margin-right: 0.13333333rem;
+  margin-left: 0.13333333rem;
+}
+footer .footer-butter .footer-butter-01 .li05 {
+  margin-left: 0.13333333rem;
+}
+footer .footer-butter .footer-butter-01 .li02::after {
+  content: "";
+  display: block;
+  width: 0.01333333rem;
+  height: 0.2rem;
+  background-color: black;
+  margin-top: -0.22666667rem;
+  margin-left: -0.13333333rem;
+}
+footer .footer-butter .footer-butter-01 .li03::after {
+  content: "";
+  display: block;
+  width: 0.01333333rem;
+  height: 0.13333333rem;
+  background-color: black;
+  margin-top: -0.22666667rem;
+  margin-left: -0.13333333rem;
+}
+footer .footer-butter .footer-butter-01 .li04::after {
+  content: "";
+  display: block;
+  width: 0.01333333rem;
+  height: 0.13333333rem;
+  background-color: black;
+  margin-top: -0.22666667rem;
+  margin-left: -0.13333333rem;
+}
+footer .footer-butter .footer-butter-01 .li05::after {
+  content: "";
+  display: block;
+  width: 0.01333333rem;
+  height: 0.13333333rem;
+  background-color: black;
+  margin-top: -0.22666667rem;
+  margin-left: -0.13333333rem;
+}
+footer .footer-butter .footer-butter-butter {
+  font-size: 0.13333333rem;
+  text-align: center;
+}
+footer {
+  margin-top: 0!important;
+}
+#text {
+  width: 10rem;
+  height: 9.33333333rem;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#textStart {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 8rem;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+#textStart #box01 {
+  height: 1.06666667rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.33333333rem;
+  border-bottom: 0.01333333rem dashed black;
+}
+#box02 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+#box02 #box0201 {
+  border-bottom: 0.01333333rem dashed black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.2rem;
+}
+#box02 #box0201 .shortBox01 {
+  display: flex;
+  flex-direction: column;
+}
+#box02 #box0201 .shortBox01 .check {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#box02 #box0201 .shortBox02 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#box02 #box0201 .shortBox02 .photoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#box02 #box0201 .shortBox02 .photo {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  background: url(../images/1.jpg) no-repeat;
+  background-size: 1.33333333rem 1.33333333rem;
+}
+#box02 #box0201 .shortBox02 .font {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.13333333rem;
+}
+#box02 #box0201 .shortBox02 .font .hea {
+  font-weight: bold;
+  font-size: 0.17333333rem;
+}
+#box02 #box0201 .shortBox03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#box02 #box0201 .shortBox03 #price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+#box02 #box0201 .shortBox03 #price em {
+  font-weight: normal;
+}
+#box02 #box0201 .shortBox04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#box02 #box0201 .shortBox04 #number {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#box02 #box0201 .shortBox04 #number input {
+  width: 0.33333333rem;
+  text-align: center;
+}
+#box02 #box0201 .shortBox05 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#box02 #box0201 .shortBox05 #money {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+#box02 #box0201 .shortBox05 #money em {
+  font-weight: normal;
+}
+#box02 #box0202 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.01333333rem dashed black;
+  font-size: 0.2rem;
+}
+#box02 #box0202 .checkbox02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#box02 #box0202 .photoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#box02 #box0202 .photoBox .photo {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  background: url(../images/2.jpg) no-repeat;
+  background-size: 1.33333333rem 1.33333333rem;
+}
+#box02 #box0202 .photoBox .font {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.13333333rem;
+}
+#box02 #box0202 .photoBox .font .hea {
+  font-weight: bold;
+  font-size: 0.17333333rem;
+}
+#box02 #box0202 #price02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+#box02 #box0202 #price02 em {
+  font-weight: normal;
+}
+#box02 #box0202 #number02 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#box02 #box0202 #number02 input {
+  width: 0.33333333rem;
+  text-align: center;
+}
+#box02 #box0202 #money02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+#box02 #box0202 #money02 em {
+  font-weight: normal;
+}
+#box02 #box0203 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.2rem;
+}
+#box02 #box0203 .checkbox02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#box02 #box0203 .photoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#box02 #box0203 .photoBox .photo {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  background: url(../images/3.jpg) no-repeat;
+  background-size: 1.33333333rem 1.33333333rem;
+}
+#box02 #box0203 .photoBox .font {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.13333333rem;
+}
+#box02 #box0203 .photoBox .font .hea {
+  font-weight: bold;
+  font-size: 0.17333333rem;
+}
+#box02 #box0203 #price03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+#box02 #box0203 #price03 em {
+  font-weight: normal;
+}
+#box02 #box0203 #number03 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#box02 #box0203 #number03 input {
+  width: 0.33333333rem;
+  text-align: center;
+}
+#box02 #box0203 #money03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+#box02 #box0203 #money03 em {
+  font-weight: normal;
+}
+#buttom {
+  height: 1.66666667rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#buttom .buttomButtom {
+  height: 0.66666667rem;
+  border-top: 0.01333333rem dashed black;
+}
+#buttom .buttomTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 0.13333333rem;
+}
+#buttom .buttomTop #buttLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 2rem;
+  font-size: 0.29333333rem;
+}
+#buttom .buttomTop #buttLeft a {
+  text-decoration: none;
+  color: black;
+}
+#buttom .buttomTop #buttConter {
+  flex: 1;
+}
+#buttom .buttomTop #buttRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 3.33333333rem;
+}
+#buttom .buttomTop #buttRight div {
+  font-size: 0.2rem;
+}
+#buttom .buttomTop #buttRight div span {
+  font-size: 0.26666667rem;
+  color: red;
+  font-weight: bold;
+}
+#buttom .buttomTop #buttRight div:nth-child(2) {
+  width: 1.2rem;
+  height: 0.46666667rem;
+  line-height: 0.46666667rem;
+  text-align: center;
+  font-size: 0.2rem;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+}

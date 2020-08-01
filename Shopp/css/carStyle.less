@@ -1,0 +1,325 @@
+//定义，方便以下使用
+@ii:75rem;
+// 将通用的文件应用到此文件中
+@import "./cummon.less";
+// 提高权重取消通用的
+footer{
+    margin-top: 0!important;
+}
+// 中间内容框架的搭建
+#text{
+    width: 10rem;
+    height: 700 / @ii;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#textStart{
+    box-sizing: border-box;
+    width: 10rem;
+    height: 600 / @ii;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30 / @ii;
+    padding-right: 30 / @ii;
+    #box01{
+        height: 80 / @ii;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 25 / @ii;
+        border-bottom: 1 / @ii dashed black;
+    }
+}
+// 第一个购物商品，与下面的购物山商品结构不同，用来撑起列表项
+#box02{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    #box0201{
+        border-bottom: 1 / @ii dashed black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15 / @ii;
+        .shortBox01{
+            display: flex;
+            flex-direction: column;
+            .check{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .shortBox02{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .photoBox{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .photo{
+                width: 100 / @ii;
+                height: 100 / @ii;
+                background: url(../images/1.jpg) no-repeat;
+                background-size: 100 / @ii 100 / @ii;
+            }
+            .font{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                font-size: 10 / @ii;
+                .hea{
+                    font-weight: bold;
+                    font-size: 13 / @ii;
+                }
+            }
+        }
+        .shortBox03{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            #price{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: red;
+                font-weight: bold;
+                em{
+                    font-weight: normal;
+                }
+            }
+        }
+        .shortBox04{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            #number{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                input{
+                    width: 25 / @ii;
+                    text-align: center;
+                }
+            }
+        }
+        .shortBox05{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            #money{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: red;
+                font-weight: bold;
+                em{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    // 第二个购物商品
+    #box0202{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1 / @ii dashed black;
+        font-size: 15 / @ii;
+        .checkbox02{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .photoBox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .photo{
+                width: 100 / @ii;
+                height: 100 / @ii;
+                background: url(../images/2.jpg) no-repeat;
+                background-size: 100 / @ii 100 / @ii;
+            }
+            .font{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                font-size: 10 / @ii;
+                .hea{
+                    font-weight: bold;
+                    font-size: 13 / @ii;
+                }
+            }
+        }
+        #price02{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: red;
+            font-weight: bold;
+            em{
+                font-weight: normal;
+            }     
+        }
+        #number02{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 25 / @ii;
+                text-align: center;
+            }
+        }
+        #money02{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: red;
+            font-weight: bold;
+            em{
+                font-weight: normal;
+            }     
+        }
+    }
+    // 第三个购物商品
+    #box0203{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15 / @ii;
+        .checkbox02{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .photoBox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .photo{
+                width: 100 / @ii;
+                height: 100 / @ii;
+                background: url(../images/3.jpg) no-repeat;
+                background-size: 100 / @ii 100 / @ii;
+            }
+            .font{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                font-size: 10 / @ii;
+                .hea{
+                    font-weight: bold;
+                    font-size: 13 / @ii;
+                }
+            }
+        }
+        #price03{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: red;
+            font-weight: bold;
+            em{
+                font-weight: normal;
+            }     
+        }
+        #number03{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 25 / @ii;
+                text-align: center;
+            }
+        }
+        #money03{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: red;
+            font-weight: bold;
+            em{
+                font-weight: normal;
+            }     
+        }
+    }
+}
+// 下面结算部分
+#buttom{
+    height: 125 / @ii;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .buttomButtom{
+        height: 50 / @ii;
+        border-top: 1 / @ii dashed black;
+    }
+    .buttomTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        margin-bottom: 10 / @ii;
+        #buttLeft{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 150 / @ii;
+            font-size: 22 / @ii;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+        #buttConter{
+            flex: 1;
+        }
+        #buttRight{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 250 / @ii;
+            div{
+                font-size: 15 / @ii;
+                span{
+                    font-size: 20 / @ii;
+                    color: red;
+                    font-weight: bold;
+                }
+                &:nth-child(2){
+                    width: 90 / @ii;
+                    height: 35 / @ii;
+                    line-height: 35 / @ii;
+                    text-align: center;
+                    font-size: 15 / @ii;
+                    background-color: red;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+    }
+}

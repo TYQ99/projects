@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 标准移动端理想视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimun-scale=1.0,user-scale=no">
+    <title>商品城</title>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/indexStyle.css">
+    <script src="./js/index.js" async="async"></script>
+    <link media="screen and (max-width:439px)" href="./css/indexTextOneStyle01.css" rel="stylesheet">
+    <link media="screen and (min-width:440px)" href="./css/indexTextOneStyle02.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 固定的顶部 -->
+    <div class="head-top">
+        <div class="top-letf">北京</div>
+        <div class="top-conter"></div>
+        <div class="top-right">
+            <ul>
+                <li class="li01">登录</li>
+                <li class="li02">免费注册</li>
+                <li class="li03">我的订单</li>
+                <li class="li04">收藏夹</li>
+                <li class="li05">帮助中心</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 搜索框部分 -->
+    <div class="head-sou">
+        <div class="head-sou-left"></div>
+        <div class="head-sou-conter">
+            <form action="">
+                <input type="text" placeholder="搜索"><button></button>
+            </form>
+            <div class="head-sou-conter-bottom">
+                <ul>
+                    <li class="li01">热搜:</li>
+                    <li class="li02">笔记本</li>
+                    <li class="li03">平板</li>
+                    <li class="li04">手机</li>
+                    <li class="li05">墨盒</li>
+                    <li class="li06">高级搜索</li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-sou-right">购物车<span>0</span></div>
+    </div>
+    <!-- 滑动菜单 -->
+    <div id="menu">
+        <div class="menu01">全部商品分类<p class="sp01"></p></div>
+        <div class="menu02">促销<p class="sp02"></p></div>
+        <div class="menu03">秒杀<p class="sp03"></p></div>
+        <div class="menu04">优惠卷<p class="sp04"></p></div>
+        <div class="menu05">其他作业图<p class="sp05"></p></div>
+    </div>
+    <!-- 主体内容 -->
+    <!-- 全部商品分类 -->
+    <div id="text01">
+        <div class="text01-top01">
+            <div class="text01-top01-left">
+                <div class="text01-top01-left-01">美容彩妆
+                    <ul>
+                        <li class="li01">护肤</li>
+                        <li class="li02">面膜</li>
+                        <li class="li03">防晒</li>
+                        <li class="li04">彩妆</li>
+                        <li class="li05">香水</li>
+                    </ul>
+                </div>
+                <div class="text01-top01-left-02">服饰箱包
+                    <ul>
+                        <li class="li01">大牌</li>
+                        <li class="li02">服饰</li>
+                        <li class="li03">箱包</li>
+                        <li class="li04">配饰</li>
+                        <li class="li05">鞋履</li>
+                    </ul>
+                </div>
+                <div class="text01-top01-left-03">数码家电
+                    <ul>
+                        <li class="li01">手机</li>
+                        <li class="li02">生活</li>
+                        <li class="li03">厨房</li>
+                        <li class="li04">数码</li>
+                        <li class="li05">办公</li>
+                    </ul>
+                </div>
+                <div class="text01-top01-left-04">家居个护
+                    <ul>
+                        <li class="li01">洗护</li>
+                        <li class="li02">居家</li>
+                        <li class="li03">女性</li>
+                        <li class="li04">宠物</li>
+                        <li class="li05">家访</li>
+                    </ul>
+                </div>
+                <div class="text01-top01-left-05">运动户外
+                    <ul>
+                        <li class="li01">服饰</li>
+                        <li class="li02">鞋</li>
+                        <li class="li03">服饰</li>
+                        <li class="li04">鞋靴</li>
+                        <li class="li05">装备</li>
+                    </ul>
+                </div>
+                <div  class="text01-top01-left-06">环球美食
+                    <ul>
+                        <li class="li01">饮品</li>
+                        <li class="li02">零食</li>
+                        <li class="li03">粮油</li>
+                        <li class="li04">糕点</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text01-top01-conter"></div>
+            <div class="text01-top01-right">
+                <div class="text01-top01-right-top">
+                    <div class="text01-top01-right-top01"></div>
+                    <div class="text01-top01-right-top02">Hi~您好</div>
+                    <div class="text01-top01-right-top03">
+                        <div class="text01-top01-right-top0301">登录</div>
+                        <div class="text01-top01-right-top0302">注册</div>
+                    </div>
+                </div>
+                <div class="text01-top01-right-butt"><u>通知公告</u>
+                    <div>
+                        <ul class="text01-top01-right-butt-ul01">
+                            <li>积分支付上线了!</li>
+                            <li>积分支付上线了!</li>
+                            <li>积分支付上线了!</li>
+                            <li>积分支付上线了!</li>
+                            <li>积分支付上线了!</li>
+                            <li>积分支付上线了!</li>
+                        </ul>
+                        <ul class="text01-top01-right-butt-ul02">
+                            <li>11-21</li>
+                            <li>11-22</li>
+                            <li>11-23</li>
+                            <li>11-24</li>
+                            <li>11-25</li>
+                            <li>11-26</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text01-top02">
+            <div class="text01-top02-letf">
+                <div class="text01-top02-letf-phtot01"></div>
+                <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="text01-top02-letf-font02">
+                    <div class="text01-top02-letf-font02-left">￥459</div>
+                    <div class="text01-top02-letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="text01-top02-letf">
+                <div class="text01-top02-letf-phtot02"></div>
+                <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="text01-top02-letf-font02">
+                    <div class="text01-top02-letf-font02-left">￥459</div>
+                    <div class="text01-top02-letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="text01-top02-letf">
+                <div class="text01-top02-letf-phtot03"></div>
+                <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="text01-top02-letf-font02">
+                    <div class="text01-top02-letf-font02-left">￥459</div>
+                    <div class="text01-top02-letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="text01-top02-letf">
+                <div class="text01-top02-letf-phtot04"></div>
+                <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="text01-top02-letf-font02">
+                    <div class="text01-top02-letf-font02-left">￥459</div>
+                    <div class="text01-top02-letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+        </div>
+        <div id="text01-top03">
+            <div class="text01-top03-top">
+                <div>美容彩妆</div>
+                <ul>
+                    <li class="li01">护肤</li>
+                    <li class="li02">面膜</li>
+                    <li class="li03">防晒</li>
+                    <li class="li04">彩妆</li>
+                    <li class="li05">香水</li>
+                </ul>
+            </div>
+            <div class="text01-top03-buttom">
+                <div class="text01-top03-buttom-photo"></div>
+                <div class="text01-top03-buttom-right">
+                    <div class="text01-top03-buttom-right-01">
+                        <div class="text01-top03-buttom-right-01-top">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo01"></div>
+                        </div>
+                        <div class="text01-top03-buttom-right-01-buttom">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo02"></div>
+                        </div>
+                    </div>
+                    <div class="text01-top03-buttom-right-02">
+                        <div class="text01-top03-buttom-right-01-top">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo03"></div>
+                        </div>
+                        <div class="text01-top03-buttom-right-01-buttom">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo04"></div>
+                        </div>
+                    </div>
+                    <div class="text01-top03-buttom-right-03">
+                        <div class="text01-top03-buttom-right-03-01">最新热卖</div>
+                        <div class="text01-top03-buttom-right-03-02">
+                            <div class="photo02"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text01-top03-buttom-right-03-03">
+                            <div class="photo03"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text01-top03-buttom-right-03-04">
+                            <div class="photo04"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text01-top03-buttom-right-03-05">
+                            <div class="photo05"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text01-top04">
+            <div class="text01-top03-top">
+                <div>家居个护</div>
+                <ul>
+                    <li class="li01">洗护</li>
+                    <li class="li02">居家</li>
+                    <li class="li03">女性</li>
+                    <li class="li04">宠物</li>
+                    <li class="li05">家访</li>
+                </ul>
+            </div>
+            <div class="text01-top03-buttom">
+                <div class="text01-top03-buttom-photo"></div>
+                <div class="text01-top03-buttom-right">
+                    <div class="text01-top03-buttom-right-01">
+                        <div class="text01-top03-buttom-right-01-top">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo01"></div>
+                        </div>
+                        <div class="text01-top03-buttom-right-01-buttom">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo02"></div>
+                        </div>
+                    </div>
+                    <div class="text01-top03-buttom-right-02">
+                        <div class="text01-top03-buttom-right-01-top">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo03"></div>
+                        </div>
+                        <div class="text01-top03-buttom-right-01-buttom">
+                            <div class="font01">过年必备好礼专场</div>
+                            <div class="font02">红石榴卷后679元</div>
+                            <div class="photo04"></div>
+                        </div>
+                    </div>
+                    <div class="text01-top03-buttom-right-03">
+                        <div class="text01-top03-buttom-right-03-01">最新热卖</div>
+                        <div class="text01-top03-buttom-right-03-02">
+                            <div class="photo01"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text01-top03-buttom-right-03-03">
+                            <div class="photo02"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text01-top03-buttom-right-03-04">
+                            <div class="photo03"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text01-top03-buttom-right-03-05">
+                            <div class="photo04"></div>
+                            <div class="fontAdd">
+                                <div class="fontAdd-01">BIODERMA舒研温和卸妆水</div>
+                                <div class="fontAdd-02">
+                                    <div>￥96</div>
+                                    <del>225</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="text01-buttom">
+        <div class="text01-buttom-top">
+            <div class="fontt01">猜你喜欢</div>
+            <div class="fontt02">更多</div>
+        </div>
+        <div>
+            <div class="text01-buttom-buttom">
+                    <div class="text01-top02-letf">
+                        <div class="text01-top02-letf-phtot01"></div>
+                        <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                        <div class="text01-top02-letf-font02">
+                            <div class="text01-top02-letf-font02-left">￥459</div>
+                            <div class="text01-top02-letf-font02-cent">
+                                <span>包邮</span>
+                            </div>
+                            <del>￥615</del>
+                        </div>
+                    </div>
+                    <div class="text01-top02-letf">
+                        <div class="text01-top02-letf-phtot02"></div>
+                        <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                        <div class="text01-top02-letf-font02">
+                            <div class="text01-top02-letf-font02-left">￥459</div>
+                            <div class="text01-top02-letf-font02-cent">
+                                <span>包邮</span>
+                            </div>
+                            <del>￥615</del>
+                        </div>
+                    </div>
+                    <div class="text01-top02-letf">
+                        <div class="text01-top02-letf-phtot03"></div>
+                        <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                        <div class="text01-top02-letf-font02">
+                            <div class="text01-top02-letf-font02-left">￥459</div>
+                            <div class="text01-top02-letf-font02-cent">
+                                <span>包邮</span>
+                            </div>
+                            <del>￥615</del>
+                        </div>
+                    </div>
+                    <div class="text01-top02-letf">
+                        <div class="text01-top02-letf-phtot04"></div>
+                        <div class="text01-top02-letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                        <div class="text01-top02-letf-font02">
+                            <div class="text01-top02-letf-font02-left">￥459</div>
+                            <div class="text01-top02-letf-font02-cent">
+                                <span>包邮</span>
+                            </div>
+                            <del>￥615</del>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 促销 -->
+    <div id="text02">
+        <div class="text02-start">
+            <div class="text02-start-top">
+                <div class="text02-start-top-letf">
+                    <div class="text02-start-top-letf-font">品牌：</div>
+                </div>
+                <div class="text02-start-top-right">
+                    <ul>
+                        <li>美宝莲(Maybellne)</li>
+                        <li>圣罗兰(YSL)</li>
+                        <li>纪梵希(Givenchy)</li>
+                        <li>古驰(GUCCL)</li>
+                    </ul>
+                    <ul>
+                        <li>迪奥(Dior)</li>
+                        <li>迪奥(Dior)</li>
+                        <li>欧兰亚(Loreal)</li>
+                    </ul>
+                    <ul>
+                        <li>香奈儿(Chanel)</li>
+                        <li>兰蔻(Lancome)</li>
+                        <li>阿尼玛(Armanl)</li>
+                    </ul>
+                    <ul>
+                        <li>卡姿兰(Carslan)</li>
+                        <li>范思哲(VERSACE)</li>
+                        <li>博柏利(Burbrry)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text02-start-buttom">
+                <div class="text02-start-buttom-letf">
+                    <div class="text02-start-buttom-letf-font">国家/地区：</div>
+                </div>
+                <div class="text02-start-buttom-right">
+                    <ul>
+                        <li>中国</li>
+                        <li>法国</li>
+                        <li>美国</li>
+                        <li>中国台湾</li>
+                        <li>意大利</li>
+                        <li>英国</li>
+                        <li>瑞士</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text02-02">
+            <table border="1">
+                <tr>
+                    <td>人气</td>
+                    <td>销量</td>
+                    <td>新品</td>
+                    <td>价格</td>
+                    <td class="mon">
+                        <form action="">
+                            <input type="text" placeholder="￥" class="money">-
+                            <input type="text" placeholder="￥" class="money">
+                        </form>
+                    </td>
+                    <td class="ckbox">
+                        <form action="">
+                            <label for="ch01">
+                                <input type="checkbox" name="" id="ch01">自营商品
+                            </label>
+                            <label for="ch02">
+                                <input type="checkbox" name="" id="ch02">有货商品
+                            </label>
+                            <label for="ch03">
+                                <input type="checkbox" name="" id="ch03">促销商品
+                            </label>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="text02-03">
+            <div class="letf">
+                <div class="letf-phtot01"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot02"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot03"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot04"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+        </div>
+        <div id="text02-04">
+            <div class="letf">
+                <div class="letf-phtot01"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot02"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot03"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot04"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+        </div>
+        <div id="text02-05">
+            <div class="letf">
+                <div class="letf-phtot01"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot02"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot03"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot04"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+        </div>
+        <div id="text02-06">
+            <div class="letf">
+                <div class="letf-phtot01"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot02"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot03"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot04"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+        </div>
+        <div id="text02-07">
+            <div class="letf">
+                <div class="letf-phtot01"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot02"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot03"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+            <div class="letf">
+                <div class="letf-phtot04"></div>
+                <div class="letf-font01">Dior 奥迪 花荡甜心小姐女士...</div>
+                <div class="letf-font02">
+                    <div class="letf-font02-left">￥459</div>
+                    <div class="letf-font02-cent">
+                        <span>包邮</span>
+                    </div>
+                    <del>￥615</del>
+                </div>
+            </div>
+        </div>
+        <div id="text02buttom">
+            <ul>
+                <li><a href="#"><</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 秒杀 -->
+    <div id="text03">开始想加一些好玩特效的，但是还要考虑手机端不搞了，太麻烦</div>
+    <!-- 优惠券 -->
+    <div id="text04">开始想加一些好玩特效的，但是还要考虑手机端不搞了，太麻烦</div>
+    <!-- 其他作业图 -->
+    <div id="text05">
+        <img src="./images/js.png" alt="">
+        <img src="./images/java.png" alt="">
+        <img src="./images/javaWork01.png" alt="">
+        <img src="./images/javaWork02.png" alt="">
+        <img src="./images/javaWork03.png" alt="">
+        <img src="./images/javaWork04.png" alt="">
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-01">
+                <div class="photo01"></div>
+                <div>
+                    <div class="footer-top-font-t">100%正品</div>
+                    <div class="footer-top-font-b">正品保障 假一赔十</div>
+                </div>
+            </div>
+            <div class="footer-top-01">
+                <div class="photo02"></div>
+                <div>
+                    <div class="footer-top-font-t">无忧退货</div>
+                    <div class="footer-top-font-b">过年退货 售后无忧</div>
+                </div>
+            </div>
+            <div class="footer-top-01">
+                <div class="photo03"></div>
+                <div>
+                    <div class="footer-top-font-t">低价保障</div>
+                    <div class="footer-top-font-b">减缩环节 确保低价</div>
+                </div>
+            </div>
+            <div class="footer-top-01">
+                <div class="photo04"></div>
+                <div>
+                    <div class="footer-top-font-t">海外发货</div>
+                    <div class="footer-top-font-b">海外直邮 闪电发货</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div>
+                <ul>
+                    <li class="li01">购物指南</li>
+                    <li>购物流程</li>
+                    <li>账号管理</li>
+                    <li>发票制度</li>
+                    <li>会员优惠</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">支付方式</li>
+                    <li>货到付款</li>
+                    <li>网上支付</li>
+                    <li>礼品卡</li>
+                    <li>银行转账</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">订单服务</li>
+                    <li>配送查询</li>
+                    <li>状态说明</li>
+                    <li>取消订单</li>
+                    <li>讯该订单</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">配送方式</li>
+                    <li>配送范围</li>
+                    <li>免费标准</li>
+                    <li>订单自提</li>
+                    <li>验货签收</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="li01">售后服务</li>
+                    <li>售后曾策</li>
+                    <li>价格保护</li>
+                    <li>退款说明</li>
+                    <li>会换货</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-butter">
+            <div class="footer-butter-01">
+                <ul>
+                    <li class="li01">关于我们</li>
+                    <li class="li02">服务条款</li>
+                    <li class="li03">隐私保护</li>
+                    <li class="li04">联系我们</li>
+                    <li class="li05">帮助中心</li>
+                </ul>
+            </div>
+            <div class="footer-butter-butter">Copyringt @2016 XXX.All Rights Reservad</div>
+        </div>
+    </footer>
+
+</body>
+<p>唐乔乔持有版权</p>
+</html>

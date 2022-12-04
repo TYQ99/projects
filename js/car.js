@@ -92,7 +92,7 @@ function del(){
             boxFather.removeChild(arr[i]);
     }
     if (check[0].checked) {
-        alert("小丁同学：这个是我最喜欢的，留下它吧！");
+        alert("XX同学：这个是我最喜欢的，留下它吧！");
     }
 
     $("#all").checked=false;
@@ -109,7 +109,19 @@ $("#li01").on("click",function(){
     let check=$("input[name='id']");
     let long=check.length;
         sessionStorage.setItem("long",long);
-        window.location="index.html";
+        window.location="./login.html";
+})
+$("#li02").on("click",function(){
+    let check=$("input[name='id']");
+    let long=check.length;
+        sessionStorage.setItem("long",long);
+        window.location="./login.html";
+})
+$("#li03").on("click",function(){
+    let check=$("input[name='id']");
+    let long=check.length;
+        sessionStorage.setItem("long",long);
+        window.location="../index.html";
 })
 /****************************************************
  *********************自定义函数**********************

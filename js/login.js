@@ -32,6 +32,17 @@ $("#li01").on("click",function(){
         console.log("显示div");
     })
 })
+$("#li02").on("click",function(){
+    $("#tex").hide(500,function(){
+        console.log("隐藏div");
+    })
+    $("#text").show(500,function(){
+        console.log("显示div");
+    })
+})
+$("#li03").on("click",function(){
+    window.location="../index.html";
+})
 $("#zhuc02").on("click",function(){
     $("#tex").hide(500,function(){
         console.log("隐藏div");
@@ -103,7 +114,7 @@ var zhuc=document.getElementById("zhuc");//获取注册内容注册按钮
                     document.getElementById("erry04").className="fire"
                 }
         }else{
-            alert("小丁同学：要先勾勒《网站服务条款》哦！");
+            alert("XX同学：要先勾勒《网站服务条款》哦！");
         }
     },false)
 // 登录部分
@@ -117,17 +128,17 @@ var denglu02=document.getElementById("denglu02");//获取登录内容登录按�
             var logPassword=document.getElementById("pass02").value;
             if (showValue()) {
                 if(validate(logAccount,logPassword)==true){
-                    alert("小丁同学：你真厉害已成功登录哈！");
+                    alert("XX同学：你真厉害已成功登录哈！");
                     sessionStorage.setItem("regAccount",logAccount);
                     sessionStorage.setItem("regPassword",logPassword);
-                    window.location="index.html";
+                    window.location="../index.html";
                 }else{
-                    alert("小丁同学：登录失败，动动你的大脑哈！");
+                    alert("XX同学：登录失败，动动你的大脑哈！");
                 }
             } else {
-                alert("小丁同学：同学需要先注册才能登录哦！");
+                alert("XX同学：同学需要先注册才能登录哦！");
             }
         }else{
-            alert("小丁同学：要先勾勒《网站服务条款》哦！");
+            alert("XX同学：要先勾勒《网站服务条款》哦！");
         }
     },false)

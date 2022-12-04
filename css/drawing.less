@@ -1,0 +1,37 @@
+//定义，方便以下使用
+@ii:75rem;
+// 将通用的文件应用到此文件中
+@import "./cummon.less";
+#connter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.line01,.line02{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: .6667rem;
+}
+.content,.content01{
+    text-align: center;
+    font-size: .6667rem;
+    margin-top: 1.3333rem;
+    color: red;
+}
+
+.drawing,.drawing01{
+    width: 4.6667rem;
+    height: 4.6667rem;
+}
+
+#canvas01,#canvas02,#canvas03,#canvas04{
+    width: 4.6667rem;
+    height: 4.6667rem;
+    position: relative;
+    top: -2.3333rem;
+    left: 0px;
+}

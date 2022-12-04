@@ -32,11 +32,12 @@ $(document).ready(function(){
     var seen03=sessionStorage.getItem("long");
     // 判断是否为空值
     if (null==seen) {
-        alert("小丁同学：你还没有登录，请尽快登录哈！");
+        alert("XX同学：由于大部分的静态资源放在服务器上，在2022年12-22号后部分部分静态资源无法查看！！");
+        alert("XX同学：你还没有登录，请尽快登录哈！");
     } else {
         // 登录完成提醒密码
         if (null==seen03) {
-            alert("小丁同学：账号为"+sessionStorage.getItem("regAccount")
+            alert("XX同学：账号为"+sessionStorage.getItem("regAccount")
                 +"的同学欢迎回来，你的密码是"
                 +sessionStorage.getItem("regPassword")
                 +"不要忘了哈！\n并向你的购物车添加3个商品哈！");
@@ -49,9 +50,9 @@ $(document).ready(function(){
     // 若果没有登录则禁止查看购物车
     goCar.addEventListener("click",function(){
         if (null==seen) {
-            alert("小丁同学：请先登录才能查看自己的购物车哈！");
+            alert("XX同学：请先登录才能查看自己的购物车哈！");
         } else {
-            window.location="car.html";
+            window.location="./html/car.html";
         }
     },false)
 /*********************************************
@@ -73,17 +74,34 @@ $(document).ready(function(){
 var login=document.getElementsByClassName("text01-top01-right-top0301")[0];
 var logon=document.getElementsByClassName("text01-top01-right-top0302")[0];
 var login02=document.getElementsByClassName("li01")[0];
+var register=document.getElementsByClassName("li02")[0];
+var bookStore=document.getElementsByClassName("li03")[0];
+var drawing=document.getElementsByClassName("li04")[0];
+var company=document.getElementsByClassName("li05")[0];
     login.addEventListener("click",function(){
         sessionStorage.setItem("falg",1);
-        window.location="login.html";
+        window.location="./html/login.html";
     },false)
     login02.addEventListener("click",function(){
         sessionStorage.setItem("falg",1);
-        window.location="login.html";
+        window.location="./html/login.html";
+    },false)
+    register.addEventListener("click",function(){
+        sessionStorage.setItem("falg",1);
+        window.location="./html/login.html";
+    },false)
+    bookStore.addEventListener("click",function(){
+        window.location="./html/bookStore.html";
+    },false)
+    drawing.addEventListener("click",function(){
+        window.location="./html/drawing.html";
+    },false)
+    company.addEventListener("click",function(){
+        window.location="./html/company.html";
     },false)
     logon.addEventListener("click",function(){
         sessionStorage.setItem("falg",0);
-        window.location="login.html";
+        window.location="./html/login.html";
     },false)
 /*********************************************
  ***************自定义函数部分*****************
@@ -107,7 +125,8 @@ function hua(id,cla,sp,objj){
         var obj=$(sp);
         // 输入哪一个需要滑下
         $(cla).slideDown("slow",function(){
-            objj.style.backgroundImage="url('./images/huaXia.png')";
+            // objj.style.backgroundImage="url('./images/huaXia.png')";
+            objj.style.backgroundImage="url('http://rlqzlo97m.hd-bkt.clouddn.com/index/huaXia.png')";
             // console.log("滑下");
         })
         // 定义一个字符串数组，是对应五个内容div的Id
@@ -124,7 +143,7 @@ function hua(id,cla,sp,objj){
         }
         // 让除此对象的全部对象下面属性的图片与背景颜色改变
         for(let i=0;i<$(sp).length;i++){
-            obj[i].style.backgroundImage="url('./images/huashang.png')";
+            obj[i].style.backgroundImage="url('http://rlqzlo97m.hd-bkt.clouddn.com/index/huashang.png')";
             obj[i].parentNode.style.backgroundColor="#FFFFFF";
         }
         // 让此对象的背景颜色为红色

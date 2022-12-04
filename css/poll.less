@@ -1,0 +1,50 @@
+//定义，方便以下使用
+@ii:75rem;
+// 将通用的文件应用到此文件中
+@import "./cummon.less";
+
+
+@font-face {
+    font-family: myfont;
+    src: url("../fonts/书法.ttf");
+}
+
+#connter{
+    font-family: myfont;
+    font-size: .3333rem;
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .form-control{
+        font-size: .2667rem;
+    }
+}
+
+.form-group{
+    margin-bottom: 0;
+    margin-top: .4rem;
+}
+
+#tu{
+    margin-top: .4rem;
+    font-size: .2667rem;
+    p{
+        color: black;
+        font-family: myfont;
+    }
+    .active{
+        color: black;
+    }
+}
+
+span.word{
+    z-index: 99;
+    font-size: .2667rem;
+    left:-5px;
+    top:-5px;
+    position:absolute;
+    color:white;
+    text-shadow: 0 0 .0533rem #1e90ff,0 0 .1067rem #1e90ff ;
+}

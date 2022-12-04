@@ -1,0 +1,66 @@
+//定义，方便以下使用
+@ii:75rem;
+// 将通用的文件应用到此文件中
+@import "./cummon.less";
+
+#test,.player,video{
+    width: 10rem;
+}
+a{
+    text-decoration: none;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: .3rem;
+}
+
+.switch{
+    margin-right: .1333rem;
+}
+.progress{
+    flex: 1;
+    height: 20px;
+    font-size: .2rem;
+}
+
+.timer{
+    font-size: .2rem;
+    width: 2rem;
+    text-align:center;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: myfont;
+    src: url("../fonts/书法.ttf");
+}
+
+.historyConnter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: myfont;
+    font-size: .4rem;
+    .historyTheme{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 1rem;
+        div{
+            height:  .5333rem;
+        }
+        
+    }
+    div .itme01{
+        width: .2667rem;
+        height: .2667rem;
+        border-radius: 50%;
+        margin-top: .2rem;
+        background-color: rgb(42, 39, 39);
+        margin-right: .4rem;
+    }
+    
+}

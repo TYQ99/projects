@@ -1,0 +1,80 @@
+//定义，方便以下使用
+@ii:75rem;
+// 将通用的文件应用到此文件中
+@import "./cummon.less";
+
+header{
+    height: (400 / @ii);
+    background: url(http://rlqzlo97m.hd-bkt.clouddn.com/bookStore/tou.png) no-repeat (-300 / @ii) (-40 / @ii);
+}
+
+#connter,.item_connter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.items_01,.items,.item_connter_top,.item_connter_button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.items_01,.item_connter_top{
+    margin-bottom: .5333rem;
+}
+
+.item_theme{
+    width: 3.0667rem;
+}
+.item{
+    width: 230px;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    box-shadow: #41a8ff 0px 5px 5px;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+.item:hover{
+    top: -5px;
+    box-shadow: 0 0 15px #AAA;
+}
+
+.pic{
+    margin-left: -35px;
+    margin-top: -15px;
+}
+.p{
+    background-image: linear-gradient(to bottom,#4b6db9 20%,#b2d3ff 80%);
+    height: 8rem;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+}
+.desc{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(88, 166, 240, 0.8);
+    position: absolute;
+    bottom: -100px;
+    transition: 0.5s;
+}
+.item:hover .desc{
+    bottom: 0;
+}
+.detail{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.detail i{
+    color: red;
+}

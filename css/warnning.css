@@ -236,6 +236,9 @@ footer .footer-butter .footer-butter-butter {
   font-family: myfont;
   src: url("../fonts/暗恋初夏少女.ttf");
 }
+#text01 {
+  width: 100%;
+}
 .main {
   font-family: myfont;
   font-size: 0.3333rem;
@@ -247,6 +250,7 @@ footer .footer-butter .footer-butter-butter {
   font-family: myfont;
   font-size: 0.3333rem;
   margin-top: 0.5333rem;
+  width: 100%;
 }
 .adress button {
   font-family: myfont;
